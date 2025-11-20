@@ -3,8 +3,23 @@ __pycache__/
 *.py[codz]
 *$py.class
 
+#DATA !!!!!
+#*.npz
+
+#binary
+*.bin
+
 # C extensions
 *.so
+
+#pickle files
+*.pickle
+
+#draft folder
+notebooks/drafts/
+
+#output folder
+output/
 
 # Distribution / packaging
 .Python

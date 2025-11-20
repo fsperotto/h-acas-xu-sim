@@ -1,0 +1,5 @@
+include src/acas/img/*.png
+include src/acas/nn/*.onnx
+include src/acas/nn/*.nnet
+include src/acas/nn/*.so
+include src/acas/lut/*.npz

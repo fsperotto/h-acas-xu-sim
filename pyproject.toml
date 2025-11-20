@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "acas"
+version = "0.0.1"
+authors = [
+  {name="Filipo STUDZINSKI PEROTTO", email="filipo.perotto@onera.fr"},
+]
+description = "ACAS sim"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+	'numpy',
+	'scipy',
+	'matplotlib',
+#	'pandas',
+	'tqdm',
+	'gymnasium',
+	'pygame',
+#	'numba',
+	'onnxruntime'
+]
+
+#[project.optional-dependencies]
+#    none = []
+#	basic = []
+#    simple = []
+
+#[project.urls]
+#"Homepage" = "https://github.com/fsperotto/acas"
+#"Bug Tracker" = "https://github.com/fsperotto/acas/issues"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["acas", "acas.lut", "acas.nn", "acas.img"]
+
+#[tool.setuptools.packages.find]
+#where = ["src"]
